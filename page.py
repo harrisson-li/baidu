@@ -19,5 +19,6 @@ class BaiduPage:
     def get_element(self, xpath, timeout=30):
         return WebDriverWait(self.driver, timeout).until(conditions.presence_of_element_located((By.XPATH, xpath)))
 
+
     def wait_for_text(self, xpath, text, timeout=30):
         return WebDriverWait(self.driver, timeout).until(conditions.text_to_be_present_in_element((By.XPATH, xpath), text))
