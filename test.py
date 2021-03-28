@@ -9,12 +9,12 @@ class TestBaidu(TestBase):
     def atest_open_baidu(self):
         open_baidu()
 
-    def atest_baidu_search(self):
+    def test_baidu_search(self):
         open_baidu()
         for item in search_list:
             search_text(item['test_text'], item['result'])
 
-    def test_css_selector(self):
+    def atest_css_selector(self):
         open_baidu()
         search_css_selector('#su')
 

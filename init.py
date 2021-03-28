@@ -24,3 +24,8 @@ class TestBase(unittest.TestCase):
             instance.driver = webdriver.Chrome()
         else:
             instance.driver = webdriver.Safari()
+
+
+def assert_equal(result, expected):
+    if result != expected:
+        raise ValueError('\nExpected: {}\nActual: {}'.format(expected, result))
