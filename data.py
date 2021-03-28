@@ -3,3 +3,5 @@ search_list = [
     {"test_text": 'netease', "result": 'NetEase, Inc.'},
     {'test_text': 'tencent', 'result': 'Tencent 腾讯'}
 ]
+
+browser = 'Chrome'

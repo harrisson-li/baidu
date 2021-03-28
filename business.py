@@ -1,5 +1,6 @@
 from page import BaiduPage
 from init import instance
+import time
 
 
 def page():
@@ -15,5 +16,8 @@ def search_text(text, result):
 
 def open_baidu():
     page().open()
-    page().get_element(BaiduPage.INPUT_BOX_XPATH)
-    page().get_element(BaiduPage.INPUT_BOX_XPATH)
+
+
+def search_css_selector(content):
+    time.sleep(5)
+    print(page().get_element_by_css_selector(content).text)
