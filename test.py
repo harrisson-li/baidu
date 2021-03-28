@@ -16,7 +16,7 @@ class TestBaidu(TestBase):
 
     def test_css_selector(self):
         open_baidu()
-        search_css_selector('input.bg s_btn')
+        search_css_selector('#su')
 
 
 if __name__ == '__main__':

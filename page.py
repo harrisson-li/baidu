@@ -24,3 +24,7 @@ class BaiduPage:
 
     def get_element_by_css_selector(self, content):
         return self.driver.find_element_by_css_selector(content)
+
+    @property
+    def search_button(self):
+        return self.get_element(self.SEARCH_BUTTON_XPATH)
